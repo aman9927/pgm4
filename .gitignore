@@ -1,52 +1,17 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+//Sum of digits in a number
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int n,sum,digit;
+    printf("Enter the number\n");
+    scanf("%d",&n);
+    sum=0;
+    while(n!=0)
+    {
+        digit=n%10;
+        n=n/10;
+        sum=sum+digit;
+    }
+    printf("Sum = %d",sum);
+}
